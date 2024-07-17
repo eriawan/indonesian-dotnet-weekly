@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: HelloDotnetConsole NET 6.0 Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/source/HelloDotnetConsole/bin/Debug/net6.0/HelloDotnetConsole.dll",
+            "preLaunchTask": "dotnet: build HelloDotnetConsole"
+        },
+        {
+            "name": "C#: HelloDotnetConsole NET 8.0 Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/source/HelloDotnetConsole/bin/Debug/net8.0/HelloDotnetConsole.dll",
+            "preLaunchTask": "dotnet: build HelloDotnetConsole"
+        }
+
+    ]
+}
