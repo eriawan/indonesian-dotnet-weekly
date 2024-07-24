@@ -3,4 +3,4 @@ using System.Runtime.InteropServices;
 
 Console.WriteLine($"Hello, .NET version: {Environment.Version.ToString()}!");
 var currentDate = DateTime.Now;
-Console.WriteLine($"Current date and time is: {currentDate.ToString("mm/dd/yyyy HH:mm:ss")}");
+Console.WriteLine($"Current date and time is: {currentDate.ToString("MM/dd/yyyy HH:mm:ss")}");
