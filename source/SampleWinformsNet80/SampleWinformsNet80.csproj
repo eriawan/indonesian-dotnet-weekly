@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net8.0-windows;net8.0-windows10.0.22000.0;net6.0-windows7.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Animal.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="SampleDataset.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SampleDataset.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SampleDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SampleDataset.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
