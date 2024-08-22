@@ -3,21 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDotnetConsole", "HelloDotnetConsole\HelloDotnetConsole.csproj", "{4A4106E8-B9C7-4ADA-887B-FD1A0F78C27E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloDotnetConsole", "HelloDotnetConsole\HelloDotnetConsole.csproj", "{4A4106E8-B9C7-4ADA-887B-FD1A0F78C27E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWinformsNet80", "SampleWinformsNet80\SampleWinformsNet80.csproj", "{4ED5E074-A9F5-4A0A-B58D-ED1999DCF46B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWinformsNet80", "SampleWinformsNet80\SampleWinformsNet80.csproj", "{4ED5E074-A9F5-4A0A-B58D-ED1999DCF46B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNetCore80", "SampleAspNetCore80\SampleAspNetCore80.csproj", "{393E18E4-9CF2-4AF1-8171-02A60F787288}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleAspNetCore80", "SampleAspNetCore80\SampleAspNetCore80.csproj", "{393E18E4-9CF2-4AF1-8171-02A60F787288}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleWinformsUsingFSharp", "SampleWinformsUsingFSharp\SampleWinformsUsingFSharp.fsproj", "{D60AA2F2-6BD7-4F11-A9F3-C12E8DB864D1}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "SampleWinformsUsingFSharp", "SampleWinformsUsingFSharp\SampleWinformsUsingFSharp.fsproj", "{D60AA2F2-6BD7-4F11-A9F3-C12E8DB864D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleConsoleNETFX", "SampleConsoleNETFX\SampleConsoleNETFX.csproj", "{4D39D6C7-4613-4C61-A411-D67678F7B6D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4A4106E8-B9C7-4ADA-887B-FD1A0F78C27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +35,12 @@ Global
 		{D60AA2F2-6BD7-4F11-A9F3-C12E8DB864D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D60AA2F2-6BD7-4F11-A9F3-C12E8DB864D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D60AA2F2-6BD7-4F11-A9F3-C12E8DB864D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D39D6C7-4613-4C61-A411-D67678F7B6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D39D6C7-4613-4C61-A411-D67678F7B6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D39D6C7-4613-4C61-A411-D67678F7B6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D39D6C7-4613-4C61-A411-D67678F7B6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
