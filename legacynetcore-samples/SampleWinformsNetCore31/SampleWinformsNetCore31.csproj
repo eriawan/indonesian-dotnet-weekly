@@ -9,7 +9,7 @@
   <Target Name="MessageBeforeBuild" BeforeTargets="Build">
     <Message Text="This is before running target Build" Importance="high" />
   </Target>
-  <Target Name="MessageBeforeBuild" AfterTargets="Build">
+  <Target Name="MessageAfterBuild" AfterTargets="Build">
     <Message Text="This is after running target Build" Importance="high" />
   </Target>
 
