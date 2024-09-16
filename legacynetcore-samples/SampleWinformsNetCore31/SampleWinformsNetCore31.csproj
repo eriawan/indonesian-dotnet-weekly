@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <Target Name="MessageBeforeBuild" BeforeTargets="BeforeBuild">
-    <Message Text="This is before running target BeforeBuild" Importance="high" />
+    <Message Text="This is before running target BeforeBuild, configuration='$(Configuration)'" Importance="high" />
   </Target>
   <Target Name="MessageAfterBuild" AfterTargets="Build">
     <Message Text="This is after running target Build" Importance="high" />
