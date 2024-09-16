@@ -6,8 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
-  <Target Name="MessageBeforeBuild" BeforeTargets="Build">
-    <Message Text="This is before running target Build" Importance="high" />
+  <Target Name="MessageBeforeBuild" BeforeTargets="BeforeBuild">
+    <Message Text="This is before running target BeforeBuild" Importance="high" />
   </Target>
   <Target Name="MessageAfterBuild" AfterTargets="Build">
     <Message Text="This is after running target Build" Importance="high" />
