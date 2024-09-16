@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <Target Name="MessageBeforeBuild" BeforeTargets="Build">
+    <Message Text="This is before running target Build" Importance="high" />
+  </Target>
+  <Target Name="MessageBeforeBuild" AfterTargets="Build">
+    <Message Text="This is after running target Build" Importance="high" />
+  </Target>
+
+</Project>
