@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 17.11.35312.102
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetConsole", "DotnetConsole\DotnetConsole.csproj", "{E972E7FA-E3AB-46BF-88B1-0646F47684E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetWinforms", "DotnetWinforms\DotnetWinforms.csproj", "{1CD9ED8C-4142-440C-9051-6CCADD83F1AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNetCoreMvc", "SampleAspNetCoreMvc\SampleAspNetCoreMvc.csproj", "{1E375A24-1C23-43C0-BB41-62561084DFDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E972E7FA-E3AB-46BF-88B1-0646F47684E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E972E7FA-E3AB-46BF-88B1-0646F47684E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E972E7FA-E3AB-46BF-88B1-0646F47684E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E972E7FA-E3AB-46BF-88B1-0646F47684E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD9ED8C-4142-440C-9051-6CCADD83F1AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD9ED8C-4142-440C-9051-6CCADD83F1AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD9ED8C-4142-440C-9051-6CCADD83F1AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD9ED8C-4142-440C-9051-6CCADD83F1AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E375A24-1C23-43C0-BB41-62561084DFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E375A24-1C23-43C0-BB41-62561084DFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E375A24-1C23-43C0-BB41-62561084DFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E375A24-1C23-43C0-BB41-62561084DFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
