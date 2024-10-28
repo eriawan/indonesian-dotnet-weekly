@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleBlazorServerNet80", "SampleBlazorServerNet80\SampleBlazorServerNet80.csproj", "{D2E35907-D6B8-4968-86E8-3194CA05ED00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBlazorWebAppNet80", "SampleBlazorWebAppNet80\SampleBlazorWebAppNet80.csproj", "{F136DB93-99D9-4238-9462-C2D68EFC67DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleBlazorWebAppNet80", "SampleBlazorWebAppNet80\SampleBlazorWebAppNet80.csproj", "{F136DB93-99D9-4238-9462-C2D68EFC67DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleBlazorWasmNet80", "SampleBlazorWasmNet80\SampleBlazorWasmNet80.csproj", "{47500B59-F522-4D10-8400-640F346E58AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F136DB93-99D9-4238-9462-C2D68EFC67DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F136DB93-99D9-4238-9462-C2D68EFC67DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F136DB93-99D9-4238-9462-C2D68EFC67DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47500B59-F522-4D10-8400-640F346E58AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47500B59-F522-4D10-8400-640F346E58AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47500B59-F522-4D10-8400-640F346E58AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47500B59-F522-4D10-8400-640F346E58AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
