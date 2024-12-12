@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
+using SampleAspNetAspire90.ApiService.DataContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,12 @@ builder.AddServiceDefaults();
 // Add Redis distributed cache.
 builder.AddRedisDistributedCache("cache");
 
+// Add Entity Framework for Sql Server support
+builder.Services.AddDbContext<SampleAspNetAspire90.ApiService.DataContext.AspireDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AspireDbContext"));
+});
+
 // Add services to the container.
 builder.Services.AddProblemDetails();
 
@@ -15,6 +23,9 @@ builder.Services.AddProblemDetails();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
+// Initialize DB context 
+app.CreateDbIfNotExists();
 
 // Configure the HTTP request pipeline.
 app.UseExceptionHandler();
@@ -39,6 +50,13 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
+
+app.MapGet("/productlist", async (SampleAspNetAspire90.ApiService.DataContext.AspireDbContext aspireDb) => 
+{
+    List<Product> products = new();
+    products = await aspireDb.Product.ToListAsync();
+    return products;
+});
 
 app.MapGet("/samples", async (IDistributedCache cache) =>
 {

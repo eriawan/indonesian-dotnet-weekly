@@ -16,12 +16,20 @@ var cache = builder.AddRedis("cache")
 //    .WithRedisInsight()
 //    .WithRedisCommander();
 
-var sqlserverdb = builder.AddSqlServer("sqlserverdb", port: 1500)
+var sqlserverpassword = builder.AddParameter("sqlserver-password", "Passw0rd");
+var sqlserverInstance = builder.AddSqlServer("sqlserverdb", sqlserverpassword, port: 1500)
     .WithLifetime(ContainerLifetime.Persistent);
+var sqlserverDatabase = sqlserverInstance.AddDatabase("aspiresampledb");
+
+//var apiService = builder.AddProject<Projects.SampleAspNetAspire90_ApiService>("apiservice")
+//    .WithReference(cache)
+//    .WaitFor(cache);
 
 var apiService = builder.AddProject<Projects.SampleAspNetAspire90_ApiService>("apiservice")
     .WithReference(cache)
-    .WaitFor(cache);
+    .WaitFor(cache)
+    .WithReference(sqlserverInstance)
+    .WaitFor(sqlserverInstance);
 
 builder.AddProject<Projects.SampleAspNetAspire90_Web>("webfrontend")
     .WithExternalHttpEndpoints()

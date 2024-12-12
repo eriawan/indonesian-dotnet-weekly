@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAspNetAspire90.AppHost", "SampleAspNetAspire90.AppHost\SampleAspNetAspire90.AppHost.csproj", "{7A1CF9E4-86BD-48F0-9930-F32E8FAD3B92}"
 EndProject

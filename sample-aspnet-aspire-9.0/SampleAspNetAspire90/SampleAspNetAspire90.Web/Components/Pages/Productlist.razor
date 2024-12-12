@@ -1,0 +1,46 @@
+﻿@page "/productlist"
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@inject ProductlistApiClient ProductApi
+
+<PageTitle>Product list</PageTitle>
+
+<h1>Product list</h1>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Product name</th>
+                <th aria-label="Temperature in Celsius">Description</th>
+                <th aria-label="Temperature in Farenheit">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.ProductName</td>
+                    <td>@product.ProductDescription</td>
+                    <td>@product.ProductPrice</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private List<Product>? products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await ProductApi.GetProductAsync();
+    }
+}
